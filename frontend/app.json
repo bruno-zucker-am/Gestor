@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Gestor Financeiro",
+    "slug": "gestor-financeiro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "gestorfinanceiro",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.exemplo.gestorfinanceiro",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./src/assets/android-icon-foreground.png",
+        "backgroundImage": "./src/assets/android-icon-background.png",
+        "monochromeImage": "./src/assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "jsEngine": "hermes"
+          }
+        }
+      ]
+    ]
+  }
+}
