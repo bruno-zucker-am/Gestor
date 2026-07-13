@@ -196,7 +196,6 @@ sql/            # Scripts SQL auxiliares
 ![imagem4](./imagem4.png)
 ![imagem5](./imagem5.png)
 ![imagem6](./imagem6.png)
-![imagem7](./imagem7.png)
 
 ## Configuração do backend
 
