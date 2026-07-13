@@ -186,27 +186,17 @@ backend/        # API ASP.NET Core 8
 frontend/       # Aplicação Expo / React Native
 infra/          # Configurações de container e proxy
 sql/            # Scripts SQL auxiliares
-imagem1.png
-imagem2.png
-imagem3.png
-imagem4.png
-imagem5.png
-imagem6.png
-imagem7.png
 ```
 
-### Referência das imagens locais
+## Imagens no GitHub
 
-As imagens podem ser adicionadas à raiz do projeto e referenciadas diretamente no GitHub ou em documentação adicional:
-
-- [imagem1.png](./imagem1.png)
-- [imagem2.png](./imagem2.png)
-- [imagem3.png](./imagem3.png)
-- [imagem4.png](./imagem4.png)
-- [imagem5.png](./imagem5.png)
-- [imagem6.png](./imagem6.png)
-- [imagem7.png](./imagem7.png)
-```
+![imagem1](./imagem1.png)
+![imagem2](./imagem2.png)
+![imagem3](./imagem3.png)
+![imagem4](./imagem4.png)
+![imagem5](./imagem5.png)
+![imagem6](./imagem6.png)
+![imagem7](./imagem7.png)
 
 ## Configuração do backend
 
