@@ -1,4 +1,8 @@
 # Gestor Financeiro
+# Link do Apk em produção:
+https://mega.nz/file/mPwSDSpT#iMwSLWHLNKbHlNTMkB52E9U_5tUHkXCqmV1zRJZ8jCo
+# usuário: TESTEBETA 
+# senha: TESTEBETA
 
 ## Visão geral
 
