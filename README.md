@@ -195,16 +195,17 @@ imagem6.png
 imagem7.png
 ```
 
-As imagens podem ser colocadas na raiz do projeto e referenciadas no README ou em documentação complementar com os caminhos abaixo:
+### Referência das imagens locais
 
-```text
-./imagem1.png
-./imagem2.png
-./imagem3.png
-./imagem4.png
-./imagem5.png
-./imagem6.png
-./imagem7.png
+As imagens podem ser adicionadas à raiz do projeto e referenciadas diretamente no GitHub ou em documentação adicional:
+
+- [imagem1.png](./imagem1.png)
+- [imagem2.png](./imagem2.png)
+- [imagem3.png](./imagem3.png)
+- [imagem4.png](./imagem4.png)
+- [imagem5.png](./imagem5.png)
+- [imagem6.png](./imagem6.png)
+- [imagem7.png](./imagem7.png)
 ```
 
 ## Configuração do backend
@@ -562,3 +563,4 @@ Ou seja, o fluxo exato é:
 - Execute `npm install` novamente
 - Confirme a versão do Node.js
 - Em caso de inconsistência de dependências, remova a pasta `node_modules` e reinstale
+
