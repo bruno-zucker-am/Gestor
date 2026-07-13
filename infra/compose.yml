@@ -1,0 +1,35 @@
+name: gestor # Nome do projeto
+
+services: # Serviço principal da aplicação
+  Gestor: # Serviço principal da aplicação
+    image: gestor:v1 # Nome da imagem do Gestor
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile # Dockerfile para construir a imagem do Gestor
+    container_name: Gestor # Nome do container do Gestor
+    restart: unless-stopped # Reinicia o container a menos que seja parado manualmente
+    ports:
+      - "8300:8300" # Porta para o frontend
+      - "8092:8092" # Porta para o backend
+    networks:
+      - projetosdb-network # Nome da rede do banco de dados
+  nginx: # Proxy reverso para gerenciar as rotas
+    image: nginx:alpine
+    container_name: Gestor-proxy # Nome do container do Nginx
+    restart: always
+    ports:
+      - "8093:80" # Porta HTTP
+      - "2096:443" # Porta HTTPS
+    volumes: # Monta os arquivos de configuração do Nginx e certificados SSL
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../cdn/ssl:/etc/nginx/ssl:ro
+      - /dev/null:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - Gestor
+    networks: # Rede para comunicação entre os serviços
+      - projetosdb-network
+
+networks: # Rede externa para comunicação entre os serviços
+  projetosdb-network: 
+    external: true # Rede externa existente, não será criada uma nova rede
+    
